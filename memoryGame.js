@@ -1,51 +1,51 @@
 const cardArray = [
     {
         name: 'pawn',
-        img: 'img/pawn.jpg'
+        img: 'pawn.jpg'
     },
     {
         name: 'bishop',
-        img: 'img/bishop.jpg'
+        img: 'bishop.jpg'
     },
     {
         name: 'knight',
-        img: 'img/knight.jpg'
+        img: 'knight.jpg'
     },
     {
         name: 'queen',
-        img: 'img/queen.jpg'
+        img: 'queen.jpg'
     },
     {
         name: 'king',
-        img: 'img/king.jpg'
+        img: 'king.jpg'
     },
     {
         name: 'rook',
-        img: 'img/rook.jpg'
+        img: 'rook.jpg'
     },
     {
         name: 'pawn',
-        img: 'img/pawn.jpg'
+        img: 'pawn.jpg'
     },
     {
         name: 'bishop',
-        img: 'img/bishop.jpg'
+        img: 'bishop.jpg'
     },
     {
         name: 'knight',
-        img: 'img/knight.jpg'
+        img: 'knight.jpg'
     },
     {
         name: 'queen',
-        img: 'img/queen.jpg'
+        img: 'queen.jpg'
     },
     {
         name: 'king',
-        img: 'img/king.jpg'
+        img: 'king.jpg'
     },
     {
         name: 'rook',
-        img: 'img/rook.jpg'
+        img: 'rook.jpg'
     }
 ]
 
@@ -79,19 +79,19 @@ function checkMatch() {
     const optionTwoId = cardsChosenIds[1];
 
     if (optionOneId == optionTwoId) {
-        cards[optionOneId].setAttribute('src', 'img/black.jpg');
-        cards[optionTwoId].setAttribute('src', 'img/black.jpg');
+        cards[optionOneId].setAttribute('src', 'black.jpg');
+        cards[optionTwoId].setAttribute('src', 'black.jpg');
         alert('You have clicked the same image!');
     } else if (cardsChosen[0] == cardsChosen[1]) {
         alert('You found a match!');
-        cards[optionOneId].setAttribute('src', 'img/white.jpg');
-        cards[optionTwoId].setAttribute('src', 'img/white.jpg');
+        cards[optionOneId].setAttribute('src', 'white.jpg');
+        cards[optionTwoId].setAttribute('src', 'white.jpg');
         cards[optionOneId].removeEventListener('click', flipCard);
         cards[optionTwoId].removeEventListener('click', flipCard);
         cardsWon.push(cardsChosen);
     } else {
-        cards[optionOneId].setAttribute('src', 'img/black.jpg');
-        cards[optionTwoId].setAttribute('src', 'img/black.jpg');
+        cards[optionOneId].setAttribute('src', 'black.jpg');
+        cards[optionTwoId].setAttribute('src', 'black.jpg');
         
     }
     resultDisplay.textContent = cardsWon.length;
