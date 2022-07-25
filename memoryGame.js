@@ -91,9 +91,9 @@ function checkMatch() {
         cardsWon.push(cardsChosen);
     } else {
         cards[optionOneId].setAttribute('src', 'black.jpg');
-        cards[optionTwoId].setAttribute('src', 'black.jpg');
-        
+        cards[optionTwoId].setAttribute('src', 'black.jpg');     
     }
+    
     resultDisplay.textContent = cardsWon.length;
     cardsChosen = [];
     cardsChosenIds = [];
