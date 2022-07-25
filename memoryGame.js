@@ -62,7 +62,7 @@ const cardsWon = [];
 function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
         const card = document.createElement('img');
-        card.setAttribute('src', 'img/black.jpg');
+        card.setAttribute('src', 'black.jpg');
         card.setAttribute('data-id', i);
         card.addEventListener('click', flipCard);
         gridDisplay.append(card);
